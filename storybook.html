@@ -13,10 +13,11 @@
 
 <body>
   <div class="container">
+      <div class="navigation">
     <a class="main-header-logo" href="index.html">
       <img src="img/content/main-header-logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
-    <div class="navigation">
+
       <nav class="main-navigation">
         <a class="site-navigation" href="catalog.html"><span class="linked-text">Каталог</span></a>
         <a class="site-navigation" href="delivery.html"><span class="linked-text">Доставка и оплата</span></a>
@@ -252,56 +253,73 @@
     </div>
   </div>
   <div class="block">
-      <div class="type-of-fat">
-          <p>Жирность:</p>
-          <ul class="graduation-fat filter-view">
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="zero">
-              <label for="zero">0%</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="ten" checked>
-              <label for="ten">до 10%</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="to-thirty">
-                <label for="to-thirty">до 30%</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="more-thirty" disabled>
-                <label for="more-thirty">выше 30%</label>
-            </li>
-          </ul>
-        </div>
+    <div class="type-of-fat">
+      <p>Жирность:</p>
+      <ul class="graduation-fat filter-view">
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="zero">
+          <label for="zero">0%</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="ten" checked>
+          <label for="ten">до 10%</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="to-thirty">
+          <label for="to-thirty">до 30%</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-radio" type="radio" name="fat" id="more-thirty" disabled>
+          <label for="more-thirty">выше 30%</label>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="block">
-      <div class="filler">
-          <p>Наполнители:</p>
-          <ul class="filler-type filter-view">
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
-              <label for="chocolate">шоколадные</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruits" id="fruits">
-                <label for="fruits">фрукты</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup" id="syrup" disabled>
-                <label for="syrup">сиропы</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="jam" id="jam">
-                <label for="jam">джемы</label>
-            </li>
+    <div class="filler">
+      <p>Наполнители:</p>
+      <ul class="filler-type filter-view">
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+          <label for="chocolate">шоколадные</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+          <label for="sugar">сахарные присыпки</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruits" id="fruits">
+          <label for="fruits">фрукты</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup" id="syrup" disabled>
+          <label for="syrup">сиропы</label>
+        </li>
+        <li class="filter-option">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="jam" id="jam">
+          <label for="jam">джемы</label>
+        </li>
 
-          </ul>
-        </div>
+      </ul>
+    </div>
   </div>
+  <section class="modal modal-feedback">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback-title">
+
+      <h3>Мы обязательно вам ответим!</h3>
+      <button class="modal-delete modal-delete-feedback" type="button"></button>
+    </div>
+      <p>
+        <input type="text" name="username" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+      </p>
+      <textarea name="message" class="comments" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="button button-style button-send" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
